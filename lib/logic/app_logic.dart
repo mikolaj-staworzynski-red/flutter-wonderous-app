@@ -35,9 +35,9 @@ class AppLogic {
   Future<void> bootstrap() async {
     debugPrint('bootstrap start...');
     // Set min-sizes for desktop apps
-    if (PlatformInfo.isDesktop) {
-      await DesktopWindow.setMinWindowSize($styles.sizes.minAppSize);
-    }
+    // if (PlatformInfo.isDesktop) {
+    //   await DesktopWindow.setMinWindowSize($styles.sizes.minAppSize);
+    // }
 
     if (kIsWeb) {
       // SB: This is intentionally not a debugPrint, as it's a message for users who open the console on web.
